@@ -1,13 +1,13 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { MapPin, Star, Users, Calendar } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { MapPin, Star, Users, Calendar } from "lucide-react";
 
 const GuideProfile = () => {
   const stats = [
     { icon: <Users />, label: "Happy Clients", value: "1000+" },
     { icon: <Calendar />, label: "Years Experience", value: "10+" },
     { icon: <MapPin />, label: "Locations", value: "50+" },
-    { icon: <Star />, label: "5-Star Reviews", value: "500+" }
+    { icon: <Star />, label: "5-Star Reviews", value: "500+" },
   ];
 
   return (
@@ -20,18 +20,21 @@ const GuideProfile = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h2 className="text-3xl font-bold">Meet Your Guide - Sanjaya</h2>
+            <h2 className="text-3xl font-bold">Meet Your Guide - Roshan</h2>
             <p className="text-gray-600">
-              Born and raised in the historic city of Galle, I've spent my life exploring every corner 
-              of Sri Lanka. With over a decade of experience as a professional tour guide, I combine my 
-              local knowledge with a passion for sharing our rich culture and natural beauty with visitors 
-              from around the world.
+              Born and raised in the historic city of Galle, I've spent my life
+              exploring every corner of Sri Lanka. With over a decade of
+              experience as a professional tour guide, I combine my local
+              knowledge with a passion for sharing our rich culture and natural
+              beauty with visitors from around the world.
             </p>
             <p className="text-gray-600">
-              My tours are more than just sightseeing – they're immersive experiences that connect you 
-              with local communities, authentic cuisine, and hidden gems that most tourists never discover. 
-              I pride myself on creating personalized experiences that cater to your interests while 
-              ensuring your safety and comfort throughout the journey.
+              My tours are more than just sightseeing – they're immersive
+              experiences that connect you with local communities, authentic
+              cuisine, and hidden gems that most tourists never discover. I
+              pride myself on creating personalized experiences that cater to
+              your interests while ensuring your safety and comfort throughout
+              the journey.
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">
@@ -55,7 +58,7 @@ const GuideProfile = () => {
             viewport={{ once: true }}
           >
             <img
-              src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80"
+              src="https://img.freepik.com/free-photo/smiling-tourist-with-map_23-2147828036.jpg"
               alt="Your Guide"
               className="rounded-lg shadow-lg w-full"
             />

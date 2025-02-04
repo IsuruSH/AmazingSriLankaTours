@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation(); // Get the current path
 
   const navItems = [
     { title: "Home", path: "/" },
@@ -18,7 +19,7 @@ const Navbar = () => {
     <nav className="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          <Link to="/" className="text-2xl font-bold text-yellow-600 ">
+          <Link to="/" className="text-2xl font-bold text-yellow-600">
             Sri Lanka Amazing Tours
           </Link>
 
@@ -28,7 +29,11 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className="text-gray-700 hover:text-yellow-600 transition-colors"
+                className={`text-gray-700 hover:text-yellow-600 transition-colors ${
+                  location.pathname === item.path
+                    ? "text-yellow-600 font-semibold"
+                    : ""
+                }`}
               >
                 {item.title}
               </Link>
@@ -56,7 +61,11 @@ const Navbar = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className="block px-3 py-2 text-gray-700 hover:text-yellow-600 transition-colors"
+                  className={`block px-3 py-2 text-gray-700 hover:text-yellow-600 transition-colors ${
+                    location.pathname === item.path
+                      ? "text-yellow-600 font-semibold"
+                      : ""
+                  }`}
                   onClick={() => setIsOpen(false)}
                 >
                   {item.title}

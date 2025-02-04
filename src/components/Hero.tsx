@@ -18,11 +18,12 @@ const Hero = () => {
       {/* Content */}
       <div className="relative h-full flex items-center justify-center text-center">
         <div className="max-w-4xl px-4">
+          <span className="text-6xl">🛺</span>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-6xl font-bold text-white mb-6"
+            className="text-4xl md:text-6xl font-bold text-white mb-6 mt-4"
           >
             Explore Sri Lanka with Your Trusted Tuk-Tuk Guide
           </motion.h1>
@@ -50,7 +51,7 @@ const Hero = () => {
       </div>
 
       {/* Animated Tuk-Tuk */}
-      <motion.div
+      {/* <motion.div
         initial={{ x: -100 }}
         animate={{ x: window.innerWidth + 100 }}
         transition={{
@@ -61,7 +62,7 @@ const Hero = () => {
         className="absolute bottom-20 left-0"
       >
         <span className="text-6xl">🛺</span>
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };

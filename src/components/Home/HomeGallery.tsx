@@ -1,26 +1,26 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Camera } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { motion } from "framer-motion";
+import { Camera } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HomeGallery = () => {
   const images = [
     {
-      url: "https://images.unsplash.com/photo-1588258524695-eb9e0bfd5b5f?auto=format&fit=crop&q=80",
-      title: "Temple of the Tooth"
+      url: "https://upload.wikimedia.org/wikipedia/commons/e/eb/SL_Kandy_asv2020-01_img33_Sacred_Tooth_Temple.jpg",
+      title: "Temple of the Tooth",
     },
     {
       url: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&q=80",
-      title: "Cultural Dance"
+      title: "Cultural Dance",
     },
     {
-      url: "https://images.unsplash.com/photo-1586185118245-a9d3987a2d0e?auto=format&fit=crop&q=80",
-      title: "Sigiriya"
+      url: "https://images.unsplash.com/photo-1588598198321-9735fd52455b?auto=format&fit=crop&q=80",
+      title: "Sigiriya",
     },
     {
-      url: "https://images.unsplash.com/photo-1546975490-a79abdd54533?auto=format&fit=crop&q=80",
-      title: "Tea Plantations"
-    }
+      url: "https://img.freepik.com/free-photo/beautiful-strawberry-garden-sunrise-doi-ang-khang-chiang-mai-thailand_335224-762.jpg",
+      title: "Tea Plantations",
+    },
   ];
 
   return (
@@ -35,7 +35,8 @@ const HomeGallery = () => {
           <Camera className="w-12 h-12 text-yellow-500 mx-auto mb-4" />
           <h2 className="text-3xl font-bold mb-4">Tour Gallery</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Glimpses of the amazing experiences and beautiful places we'll explore together
+            Glimpses of the amazing experiences and beautiful places we'll
+            explore together
           </p>
         </motion.div>
 

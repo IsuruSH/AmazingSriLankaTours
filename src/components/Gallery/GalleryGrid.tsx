@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { X } from 'lucide-react';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { X } from "lucide-react";
 
 interface Image {
   id: number;
@@ -15,40 +15,40 @@ const GalleryGrid = () => {
   const images: Image[] = [
     {
       id: 1,
-      url: "https://images.unsplash.com/photo-1588258524695-eb9e0bfd5b5f?auto=format&fit=crop&q=80",
+      url: "https://upload.wikimedia.org/wikipedia/commons/e/eb/SL_Kandy_asv2020-01_img33_Sacred_Tooth_Temple.jpg",
       title: "Kandy Temple of the Tooth",
-      location: "Kandy"
+      location: "Kandy",
     },
     {
       id: 2,
       url: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&q=80",
       title: "Traditional Dance Performance",
-      location: "Colombo"
+      location: "Colombo",
     },
     {
       id: 3,
-      url: "https://images.unsplash.com/photo-1586185118245-a9d3987a2d0e?auto=format&fit=crop&q=80",
+      url: "https://images.unsplash.com/photo-1588598198321-9735fd52455b?auto=format&fit=crop&q=80",
       title: "Sigiriya Rock Fortress",
-      location: "Sigiriya"
+      location: "Sigiriya",
     },
     {
       id: 4,
       url: "https://images.unsplash.com/photo-1546975490-a79abdd54533?auto=format&fit=crop&q=80",
       title: "Tea Plantations",
-      location: "Nuwara Eliya"
+      location: "Nuwara Eliya",
     },
     {
       id: 5,
       url: "https://images.unsplash.com/photo-1625736300986-c9d7677f8373?auto=format&fit=crop&q=80",
       title: "Local Festival",
-      location: "Galle"
+      location: "Galle",
     },
     {
       id: 6,
       url: "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&q=80",
       title: "Unawatuna Beach",
-      location: "Unawatuna"
-    }
+      location: "Unawatuna",
+    },
   ];
 
   return (

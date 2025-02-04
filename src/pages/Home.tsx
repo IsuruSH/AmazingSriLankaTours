@@ -112,7 +112,7 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <img
-                src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80"
+                src="https://img.freepik.com/free-photo/smiling-tourist-with-map_23-2147828036.jpg"
                 alt="Your Guide"
                 className="rounded-lg shadow-lg"
               />

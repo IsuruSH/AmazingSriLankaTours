@@ -1,13 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  Facebook,
-  Instagram,
-  Mail,
-  MapPin,
-  Phone,
-  Youtube,
-} from "lucide-react";
+import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
+import { FaTripadvisor } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -57,7 +51,7 @@ const Footer = () => {
                 href="#"
                 className="text-gray-400 hover:text-yellow-500 transition-colors"
               >
-                <Youtube size={20} />
+                <FaTripadvisor size={20} />
               </a>
             </div>
           </div>
