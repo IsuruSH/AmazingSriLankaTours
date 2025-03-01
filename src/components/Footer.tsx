@@ -101,11 +101,11 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-center gap-2 text-gray-400">
                 <Phone size={16} />
-                +94 123 456 789
+                +94 713 543 429 / +94 777 479 441
               </li>
               <li className="flex items-center gap-2 text-gray-400">
                 <Mail size={16} />
-                info@tuktuktours.com
+                roshanstarlit@gmail.com
               </li>
               <li className="flex items-center gap-2 text-gray-400">
                 <MapPin size={16} />
